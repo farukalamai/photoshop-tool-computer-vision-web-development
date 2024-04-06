@@ -1,0 +1,32 @@
+/******* Complete page *******/
+*{
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: white;
+}
+.main-page{
+    height: 100vh;
+    display: flex;
+}
+/******* side line *******/
+.side-line{
+    background-color: #37c9ef;
+    height: 100%;
+    width: 25px;
+}
+/******* side bar *******/
+.side-bar{
+    background-color: red;
+    height: 100%;
+    width: 15%;
+
+}
+/******* Complete page *******/
+.right-panel{
+    background-color: green;
+    height: 100%;
+    width: 100%;
+}
