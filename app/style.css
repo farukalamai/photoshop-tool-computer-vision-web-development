@@ -39,6 +39,13 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+
+}
+.circle:hover{
+    background-color: #5d5f61;
+}
+.circle:active{
+    background-color: #37c9ef;
 }
 .blue-circle{
     background-color: #37c9ef;

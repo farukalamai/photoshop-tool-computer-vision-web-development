@@ -27,10 +27,10 @@
 
         <!-- --------- Slide bar -------- -->        
         <div class="side-bar">
-            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">settings</i></span>
-            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">info</i></span>
-            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">visibility</i></span>
-            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">auto_fix_normal</i></span>
+            <span class="circle" id="button-rgb"><i class="material-icons" style="font-size: 36px; color: white;">palette</i></span>
+            <span class="circle" id="button-gray"><i class="material-icons" style="font-size: 36px; color: white;">contrast</i></span>
+            <span class="circle" id="button-blur"><i class="material-icons" style="font-size: 36px; color: white;">blur_on</i></span>
+            <span class="circle" id="button-edge"><i class="material-icons" style="font-size: 36px; color: white;">grade</i></span>
             <span class="circle blue-circle"><i class="material-icons" style="font-size: 36px; color: white;">videocam</i></span>
 
         </div>
@@ -41,13 +41,13 @@
             <div class="header">
                 <div class="empty-side"></div>
                 <h1>Photo Editor</h1>
-                <div class="logo-container"><img src="../resources/Template/Logo.png" alt="" width="120"></div>
+                <div class="logo-container"></div>
             </div>
             <!-- --------- Tablet container -------- --> 
             <div class="tablet-container">
                 <img id="tablet-image" src="../resources/Template/tablet.png" alt="" width="1050" height="600">
                 <canvas id="main-canvas" width="960" height="720">
-                    <img id="img-main" src="../resources/Template/car.png" alt="" width="960" height="570">
+                    <img id="img-main" src="../resources/Template/sample_img.jpg" alt="" width="960" height="570">
                 </canvas>
             </div>
         </div>
