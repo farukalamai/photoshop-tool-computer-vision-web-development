@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Editor</title>
     
+    <!-- add opencv -->
+    <script async src="../resources/opencv.js" onload="openCvReady()"></script>
     <!-- link to the css file -->
     <link rel="stylesheet" href="style.css">
 
     <!-- adding material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,15 +27,29 @@
 
         <!-- --------- Slide bar -------- -->        
         <div class="side-bar">
-            <span class="circle"><i class="material-icons">settings</i></span>
+            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">settings</i></span>
+            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">info</i></span>
+            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">visibility</i></span>
+            <span class="circle"><i class="material-icons" style="font-size: 36px; color: white;">auto_fix_normal</i></span>
+            <span class="circle blue-circle"><i class="material-icons" style="font-size: 36px; color: white;">videocam</i></span>
+
         </div>
 
         <!-- --------- Right Panel -------- -->        
         <div class="right-panel">
             <!-- --------- Header -------- --> 
-            <div class="header"></div>
+            <div class="header">
+                <div class="empty-side"></div>
+                <h1>Photo Editor</h1>
+                <div class="logo-container"><img src="../resources/Template/Logo.png" alt="" width="120"></div>
+            </div>
             <!-- --------- Tablet container -------- --> 
-            <div class="tablet-container"></div>
+            <div class="tablet-container">
+                <img id="tablet-image" src="../resources/Template/tablet.png" alt="" width="1050" height="600">
+                <canvas id="main-canvas" width="960" height="720">
+                    <img id="img-main" src="../resources/Template/car.png" alt="" width="960" height="570">
+                </canvas>
+            </div>
         </div>
 
 
